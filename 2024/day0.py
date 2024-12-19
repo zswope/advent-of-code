@@ -10,5 +10,5 @@ data = [line.strip() for line in data.split('\n') if line.strip()]
 for dat in data:
     print(dat)
 
-print('star1: %s'%star1)
-print('star2: %s'%star2)
+print('star1:',star1)
+print('star2:',star2)
