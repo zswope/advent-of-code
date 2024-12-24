@@ -32,6 +32,8 @@ while any('z%02d'%(i) not in wires for i in range(largestZ+1)):
 
 star1 = int(''.join(str(wires['z%02d'%i]) for i in range(largestZ,-1,-1)), 2)
 
+# repeat entire process but with swapped gates to verify hand-found solution
+
 data = open(os.path.basename(__file__).split('.')[0]+'.txt','r').read()
 data = [line.strip() for line in data.split('\n\n') if line.strip()]
 wires = {dat.split(': ')[0]:int(dat.split(': ')[1]) for dat in data[0].split('\n')}
